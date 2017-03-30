@@ -1,0 +1,311 @@
+@charset "UTF-8";
+ul {
+  list-style: none; }
+
+/* 定义字体图标 */
+* {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  list-style: none; }
+
+/* 定义字体图标 */
+* {
+  padding: 0;
+  margin: 0; }
+
+.slide-selector {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); }
+  .slide-selector.none {
+    display: none; }
+  .slide-selector .slide-wrapper {
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 45%;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate3d(0, 100%, 0);
+    transition: transform 1s; }
+    .slide-selector .slide-wrapper.slide-wrapper-show {
+      transform: translate3d(0, 0, 0); }
+  .slide-selector .header {
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dbdde3;
+    line-height: 50px;
+    font-size: 18px; }
+    .slide-selector .header span:nth-child(2) {
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center; }
+    .slide-selector .header span:not(.slide-selector .header span:nth-child(2)) {
+      width: 70px;
+      text-align: center;
+      font-style: normal; }
+    .slide-selector .header span:nth-child(3) {
+      float: right; }
+    .slide-selector .header .done {
+      color: #24aef2; }
+  .slide-selector .slide-items {
+    -ms-flex: 1;
+    flex: 1;
+    overflow: auto; }
+    .slide-selector .slide-items li {
+      height: 60px;
+      line-height: 60px;
+      font-size: 20px;
+      text-align: center;
+      border-bottom: 1px solid #dbdde3;
+      line-height: 50px; }
+
+ul {
+  list-style: none; }
+
+/* 定义字体图标 */
+* {
+  padding: 0;
+  margin: 0; }
+
+.head {
+  height: 55px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box; }
+  .head i {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    color: #24aef2;
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center; }
+  .head p {
+    line-height: 55px;
+    text-align: center;
+    color: #222222;
+    font-size: 20px; }
+
+body {
+  overflow: hidden; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 100px; }
+
+.order_write {
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  overflow: hidden; }
+  .order_write .order_sec {
+    -ms-flex: 1;
+    flex: 1;
+    overflow-y: auto; }
+  .order_write .live_hotel {
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: #FFFFFF;
+    padding: .16rem .16rem .1rem .16rem;
+    border-bottom: 1px solid #d9d9d9;
+    box-sizing: border-box; }
+    .order_write .live_hotel dt {
+      width: .8rem;
+      height: .8rem;
+      font-size: 0; }
+      .order_write .live_hotel dt img {
+        width: 100%;
+        height: 100%; }
+    .order_write .live_hotel dd {
+      -ms-flex: 1;
+      flex: 1;
+      margin-left: .15rem;
+      position: relative;
+      font-size: 20px; }
+      .order_write .live_hotel dd h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333333; }
+      .order_write .live_hotel dd p {
+        width: 100%;
+        font-size: .16rem; }
+        .order_write .live_hotel dd p:nth-child(2) {
+          color: #333333;
+          margin: .02rem 0; }
+        .order_write .live_hotel dd p:nth-child(3) {
+          margin-top: 0.05rem; }
+          .order_write .live_hotel dd p:nth-child(3) span:nth-child(1) {
+            color: #FA8F25; }
+          .order_write .live_hotel dd p:nth-child(3) span:nth-child(2) {
+            width: .38rem;
+            font-size: .14rem;
+            background: #FA8F25;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 0.02rem;
+            line-height: .2rem;
+            padding: 0 .02rem; }
+  .order_write .live_time {
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #edeef1;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    height: .4rem;
+    line-height: .4rem;
+    color: #666666;
+    font-size: 18px; }
+    .order_write .live_time p:not(:nth-child(2)) {
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center; }
+    .order_write .live_time p span:nth-child(2) {
+      margin-right: .05rem; }
+    .order_write .live_time p:nth-child(2) {
+      height: .25rem;
+      border-left: 1px solid #d9d9d9;
+      margin-top: .08rem; }
+  .order_write .room_info h2 {
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 18px;
+    color: #adadad;
+    font-weight: 500; }
+  .order_write .room_info ul {
+    background: #FFFFFF;
+    border-bottom: 1px solid #edeef1;
+    border-top: 1px solid #edeef1;
+    box-sizing: border-box; }
+    .order_write .room_info ul li {
+      display: -moz-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 45px;
+      line-height: 45px;
+      color: #333333;
+      margin-left: 10px;
+      font-size: 18px;
+      padding-left: 0.03rem; }
+      .order_write .room_info ul li:nth-child(1) {
+        border-bottom: 1px solid #edeef1;
+        box-sizing: border-box; }
+      .order_write .room_info ul li span {
+        padding-left: 0.03rem; }
+        .order_write .room_info ul li span:nth-child(1) {
+          -ms-flex: 1;
+          flex: 1; }
+        .order_write .room_info ul li span:nth-child(3) {
+          color: #24aef2;
+          margin: 0 15px 0 15px; }
+  .order_write .check_user_info h2, .order_write .contacts_info h2 {
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 18px;
+    color: #adadad;
+    font-weight: 500; }
+  .order_write .check_user_info ul, .order_write .contacts_info ul {
+    background: #FFFFFF;
+    border-bottom: 1px solid #edeef1;
+    border-top: 1px solid #edeef1;
+    box-sizing: border-box; }
+    .order_write .check_user_info ul li, .order_write .contacts_info ul li {
+      display: -moz-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 45px;
+      line-height: 45px;
+      color: #333333;
+      margin-left: 10px;
+      font-size: 18px;
+      padding-left: 0.05rem; }
+      .order_write .check_user_info ul li:nth-child(1), .order_write .contacts_info ul li:nth-child(1) {
+        border-bottom: 1px solid #edeef1;
+        box-sizing: border-box; }
+      .order_write .check_user_info ul li label, .order_write .contacts_info ul li label {
+        -ms-flex: 1;
+        flex: 1; }
+        .order_write .check_user_info ul li label input, .order_write .contacts_info ul li label input {
+          margin: 0 0 5px 50px;
+          color: #adadad;
+          border: none;
+          outline: none;
+          font-size: 16px;
+          height: 43px; }
+      .order_write .check_user_info ul li span, .order_write .contacts_info ul li span {
+        float: right;
+        width: 15px;
+        height: 15px;
+        background: #adadad;
+        border-radius: 100%;
+        color: #FFFFFF;
+        line-height: 13px;
+        text-align: center;
+        margin: 15px 15px 0 0; }
+  .order_write .prompt {
+    margin: 20px 15px 25px 15px; }
+    .order_write .prompt h2 {
+      font-size: 18px;
+      color: #f24c3d; }
+    .order_write .prompt p {
+      color: #666;
+      font-size: 16px; }
+  .order_write .foot {
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .order_write .foot p {
+      height: 55px;
+      font-size: 20px; }
+      .order_write .foot p:nth-child(1) {
+        -ms-flex: 1;
+        flex: 1;
+        background: #16498f;
+        color: #FFFFFF;
+        line-height: 55px;
+        text-align: center; }
+      .order_write .foot p:nth-child(2) {
+        color: #FFFFFF;
+        background: #24aef2;
+        width: 150px;
+        line-height: 55px;
+        text-align: center; }

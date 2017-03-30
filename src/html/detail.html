@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>酒店详情</title>
+    <link rel="stylesheet" href="../../public/css/detail.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.css"/>
+</head>
+<body>
+<div class="details_warrper">
+    <header class="head">
+        <i class="iconfont" id="backIndex">&#xe604</i>
+        <p>酒店详情</p>
+    </header>
+    <section class="details_sec">
+        <div class="details_sec_info"></div>
+        <div class="atlas">
+            <div class="atlas_list"><img src="../img/detail_banner.jpg" alt="atlas"/></div>
+            <div class="describe">查看图集</div>
+        </div>
+        <div class="describe_list none swiper-container swiper-container-horizontal">
+            <!--<ul class="img_warp">
+                <li><img src="../img/detail_banner.jpg" alt="atlas"/></li>
+            </ul>-->
+        </div>
+        <nav class="detail_nav">
+            <span class="active l_info">基本信息</span>
+            <span class="r_info">酒店简介</span>
+        </nav>
+        <div class="left_right">
+            <div class="lefts">
+            <div class="hotel_mes">
+                <div class="detail_hotel">
+
+                </div>
+            </div>
+            <div class="reserve">
+                <div class="title">
+                    <p>
+                        <span>入住</span>
+                        <span class="check_in">yyyy/mm/dd</span>
+                    </p>
+                    <p>
+                        <span>离店</span>
+                        <span class="check_leave">yyyy/mm/dd</span>
+                    </p>
+                    <p>
+                        <span>修改</span>
+                        <span class="iconfont">&#xe63c</span>
+                    </p>
+                </div>
+                <div class="information">
+                    <div class="info_list">
+                        <p>
+                            <span>标准大床房</span>
+                            <span>
+                                <i>大床</i>
+                                <i>无早</i>
+                            </span>
+                        </p>
+                        <p class="click_reserve">￥320</p>
+                        <p class="reserve_hotel">预定</p>
+                    </div>
+                    <div class="info_list">
+                        <p>
+                            <span>标准房</span>
+                            <span>
+                                <i>双人床</i>
+                                <i>无早</i>
+                            </span>
+                        </p>
+                        <p class="click_reserve">￥120</p>
+                        <p class="reserve_hotel">预定</p>
+                    </div>
+                    <div class="info_list">
+                        <p>
+                            <span>标准大床房</span>
+                            <span>
+                                <i>大床</i>
+                                <i>无早</i>
+                            </span>
+                        </p>
+                        <p class="click_reserve"><span>￥420</span><span>担保</span></p>
+                        <p class="reserve_hotel">预定</p>
+                    </div>
+                    <div class="toogle_more">展开剩余全部</div>
+                </div>
+                <div class="periphery">
+                    <div class="p_title">周边酒店</div>
+                </div>
+            </div>
+            </div>
+            <div class="rigths" id="toggleRigths">
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="Reserve_mark">
+    <div class="r_main">
+        <section class="Reserve_sec">
+            <dl class="information">
+                <dt><img src="../img/Reserver_info.jpg" alt="标准大床房"/></dt>
+                <dd class="order_msg">
+                </dd>
+            </dl>
+
+            <div class="describe">
+                <ul class="d_tag">
+                    <li>
+                        <span></span>
+                        <span>面积</span>
+                        <span>12m2</span>
+                    </li>
+                    <li>
+                        <span></span>
+                        <span>可住</span>
+                        <span>1人</span>
+                    </li>
+                    <li>
+                        <span></span>
+                        <span>床型</span>
+                        <span>单人床1.2米，1张</span>
+                    </li>
+                    <li>
+                        <span></span>
+                        <span>宽带</span>
+                        <span>无</span>
+                    </li>
+                    <li>
+                        <span></span>
+                        <span>提供</span>
+                        <span>免费早餐</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer class="Reserve_foot"><span>立即预定</span></footer>
+    </div>
+</div>
+<div class="calender_plugin">
+    <header class="calender_head">
+        <i class="iconfont back">&#xe604</i>
+        <p>选择城市</p>
+        <i class="success">完成</i>
+    </header>
+    <section class="calender_sec">
+        <div class="main">
+            <div class="select_time">选择入住时间</div>
+            <div class="title">
+                <i class="iconfont lefts">&#xe604</i>
+                <h3 class="calender_title">2017/3</h3>
+                <i class="iconfont rights">&#xe63c</i>
+            </div>
+            <div class="calender_week">
+                <span>周日</span>
+                <span>周一</span>
+                <span>周二</span>
+                <span>周三</span>
+                <span>周四</span>
+                <span>周五</span>
+                <span>周六</span>
+            </div>
+            <div class="calender_month">
+
+            </div>
+            <div class="check_in_mes">
+                <div class="calender_in_date">
+                    <span>入住日</span>
+                    <span>7月16日</span>
+                </div>
+                <div class="calender_days">
+                    <span>住几晚</span>
+                <span>
+                    <i>-</i>
+                    <i>1</i>
+                    <i>+</i>
+                </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+</body>
+<script src="../../public/js/detail.min.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

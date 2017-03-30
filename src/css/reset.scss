@@ -1,0 +1,39 @@
+
+ul{
+   list-style:none;
+}
+
+/* 定义字体图标 */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@mixin full{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+
+@mixin box-flex(){
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	display:-ms-flex;
+	display:-webkit-flex;
+	display:flex;
+}
+
+@mixin flex-direction($direction:row){
+	-webkit-flex-direction:$direction;
+}
+
+@mixin flex{
+	-webkit-flex:1;
+	flex:1;
+}
+
+
+

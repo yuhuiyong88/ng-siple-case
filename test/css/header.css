@@ -1,0 +1,29 @@
+@charset "UTF-8";
+ul {
+  list-style: none; }
+
+/* 定义字体图标 */
+* {
+  padding: 0;
+  margin: 0; }
+
+.head {
+  height: 55px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box; }
+  .head i {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    color: #24aef2;
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center; }
+  .head p {
+    line-height: 55px;
+    text-align: center;
+    color: #222222;
+    font-size: 20px; }

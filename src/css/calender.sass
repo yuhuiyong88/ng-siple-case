@@ -1,0 +1,200 @@
+@import "reset.scss"
+.calender_plugin
+  @include box-flex
+  @include flex-direction(column)
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0px
+  left: 0px
+  transform: translate3d(100%,0,0)
+  transition: transform 1s
+  background: #f5f5f5
+  z-index: 333
+  overflow: hidden
+  &.plugin_active
+    transform: translate3d(0,0,0)
+  .calender_head
+    background: #ffffff
+    height: 55px
+    border-bottom: 1px solid #dbdde3
+    box-sizing: border-box
+    .back,.success
+      font-style: normal
+      color: #24aef2
+      position: absolute
+      top: 0
+      width: 55px
+      height: 55px
+      line-height: 55px
+      text-align: center
+      font-size: 20px
+    .back
+      left: 0
+    .success
+      right: 0
+    p
+      text-align: center
+      line-height: 55px
+      font-size: 20px
+  .calender_sec
+    @include flex
+    overflow: hidden
+    .main
+    .select_time
+      font-size: 16px
+      height: 50px
+      padding-left: 18px
+      line-height: 50px
+      color: #999999
+      background: #f5f6f5
+      border-bottom: 1px solid #dbdde3
+      box-sizing: border-box
+    .title
+      @include box-flex
+      border-bottom: 1px solid #dbdde3
+      box-sizing: border-box
+      background: #ffffff
+      .lefts,.rights
+        display: inline-block
+        width: 45px
+        height: 45px
+        text-align: center
+        line-height: 45px
+        color: #24aef2
+      .rights
+        float: right
+      h3
+        @include flex
+        line-height: 45px
+        display: inline-block
+        text-align: center
+        color: #333333
+        text-align: center
+        font-size: 16px
+    .calender_week
+      @include box-flex
+      background: #ffffff
+      border-bottom: 1px solid #24aef2
+      box-sizing: border-box
+      span
+        @include flex
+        height: 40px
+        line-height: 40px
+        text-align: center
+        color: #999999
+        font-size: 14px
+    .calender_month
+      @include box-flex
+      flex-wrap: wrap
+      width: 100%
+      background: #ffffff
+      span
+        border-right: 1px solid #dbdde3
+        border-bottom: 1px solid #dbdde3
+        box-sizing: border-box
+        width: 14.2%
+        font-size: 14px
+        height: 53px
+        text-align: center
+        line-height: 53px
+        &.disable_color
+          color: #999999
+        &.check_color
+          background: #24aef2
+          color: #ffffff
+    .check_in_mes
+      background: #ffffff
+      border-top: 1px solid #dbdde3
+      border-bottom: 1px solid #dbdde3
+      box-sizing: border-box
+      margin-top: 15px
+      .calender_in_date
+        border-bottom: 1px solid #dbdde3
+        box-sizing: border-box
+        span
+          &:nth-child(2)
+            color: #999999
+            float: right
+            margin-right: 10px
+      .calender_in_date,.calender_days
+        height: 55px
+        line-height: 55px
+        margin-left: 10px
+        padding-left: 5px
+        font-size: 18px
+        span
+          &:nth-child(1)
+            line-height: 55px
+            color: #333333
+      .calender_days
+        height: 55px
+        margin-left: 10px
+        padding-left: 5px
+        font-size: 18px
+        span
+          &:nth-child(2)
+            float: right
+            margin-right: 10px
+            i
+              line-height: 25px
+              font-style: normal
+              text-align: center
+              width: 25px
+              height: 25px
+              border: 1px solid #24aef2
+              box-sizing: border-box
+              margin-top: 15px
+              float: left
+              &:not(:nth-child(2))
+                background: #24aef2
+                color: #ffffff
+              &:nth-child(2)
+                color: #24aef2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

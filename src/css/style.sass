@@ -1,0 +1,244 @@
+@import "reset.scss"
+@import "calender.sass"
+*
+  padding: 0
+  margin: 0
+html,body
+  width: 100%
+  height: 100%
+  overflow: hidden
+html
+  font-size: 100px
+body
+.warpper
+  @include box-flex
+  @include flex-direction(column)
+  overflow: hidden
+  width: 100%
+  height: 100%
+.index_tops
+  width: 100%
+  height: 150px
+  li
+    width: 100%
+    height: 150px
+    img
+      width: 100%
+      height: 100%
+.index_sec
+  @include flex
+  background: #f5f5f5
+  .index_main
+    border-bottom: 1px solid #DFDFE1
+    box-sizing: border-box
+  .select_list
+    @include box-flex
+    height: .7rem
+    background: #FFFFFF
+    line-height: .7rem
+    padding-left: 10px
+    p
+      font-size: 16px
+      border-bottom: 1px solid #DFDFE1
+      box-sizing: border-box
+      &:nth-child(2)
+        height: .70rem
+        width: 70px
+        border-left: 1px solid #24aef2
+        box-sizing: border-box
+        span
+          line-height: 35px
+          height: 35px
+          display: block
+          width: 100%
+          text-align: center
+          &:nth-child(2)
+            font-size: 14px
+          &:nth-child(1)
+            font-size: 28px
+      &:nth-child(1)
+        @include flex
+        span
+          &:last-child
+            float: right
+            margin-right: 15px
+            color: #24aef2
+
+          &:nth-child(1)
+            margin-left: 8px
+            display: inline-block
+            width: 10px
+            height: 10px
+            border-radius: 100%
+            background: #E6E6E6
+          &:nth-child(2)
+            margin: 0 25px 0 10px
+            color: #9C9C9C
+    &:nth-child(1)
+      p
+        &:nth-child(2)
+          color: #24aef2
+    &:not(:nth-child(1))
+      p
+        &:nth-child(2)
+          color: #333
+  .select_list_last
+    border-bottom: none
+    height: .7rem
+    background: #FFFFFF
+    line-height: .7rem
+    padding-left: 20px
+    p
+      font-size: 16px
+      span
+        &:nth-child(1)
+          display: inline-block
+          width: 10px
+          height: 10px
+          border-radius: 100%
+          background: #E6E6E6
+        &:nth-child(2)
+          color: #9C9C9C
+          margin: 0 25px 0 10px
+    input
+      font-size: 16px
+      outline: 0 auto
+      border: none
+      background: #ffffff
+      height: 100%
+  .index_submit
+    font-size: 18px
+    background: #24aef2
+    color: #ffffff
+    height: 65px
+    line-height: 65px
+    margin-top: 10px
+    text-align: center
+.city_plugin
+  position: relative
+  position: absolute
+  top: 0
+  left: 0px
+  transform: translate3d(100%,0,0)
+  transition: transform 1s
+  background: #ffffff
+  width: 100%
+  height: 100%
+  z-index: 2
+  overflow-y: auto
+  &.plugin_active
+    transform: translate3d(0,0,0)
+.city_main
+  .select_head
+    height: 55px
+    border-bottom: 1px solid #dbdde3
+    box-sizing: border-box
+    i
+      position: absolute
+      top: 0
+      left: 0
+      width: 55px
+      height: 55px
+      line-height: 55px
+      text-align: center
+      font-size: 20px
+    p
+      text-align: center
+      line-height: 55px
+      font-size: 20px
+
+  .select_sec
+  .select_present
+    .title
+      font-size: 16px
+      padding-left: 20px
+      background: #EBEBEB
+      font-weight: normal
+      color: #999999
+      height: 35px
+      line-height: 35px
+    .select_list
+      li
+        height: 55px
+        line-height: 55px
+        border-bottom: 1px solid #dbdde3
+        box-sizing: border-box
+        font-size: 18px
+        padding-left: 20px
+        &:nth-child(1)
+          color: #333333
+        &:nth-child(2)
+          color: #24aef2
+          span
+            &:nth-child(2)
+              float: right
+              margin-right: 15px
+  .select_hot
+    .hot_list
+      @include box-flex
+      flex-wrap: wrap
+      width: 100%
+      background: #ffffff
+      li
+        font-size: 16px
+        width: 33.3%
+        display: inline-block
+        height: 65px
+        line-height: 65px
+        text-align: center
+  .title_common
+    font-size: 16px
+    padding-left: 20px
+    background: #EBEBEB
+    font-weight: normal
+    color: #8a9399
+    height: 35px
+    line-height: 35px
+  .city_alpha
+    .more_list
+      @include box-flex
+      flex-wrap: wrap
+      width: 100%
+      background: #ffffff
+      span
+        font-size: 16px
+        width: 11.11%
+        display: inline-block
+        height: 65px
+        line-height: 65px
+        text-align: center
+  .select_main
+    .alpha
+      li
+        height: 44px
+        color: #333333
+        margin-left: 12px
+        padding-left: 10px
+        border-bottom: 1px solid #dbdde3
+        box-sizing: border-box
+        font-size: 18px
+        line-height: 44px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

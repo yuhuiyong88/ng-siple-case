@@ -1,0 +1,71 @@
+@charset "UTF-8";
+ul {
+  list-style: none; }
+
+/* 定义字体图标 */
+* {
+  padding: 0;
+  margin: 0; }
+
+.slide-selector {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); }
+  .slide-selector.none {
+    display: none; }
+  .slide-selector .slide-wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    width: 100%;
+    height: 45%;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate3d(0, 100%, 0);
+    transition: transform 1s; }
+    .slide-selector .slide-wrapper.slide-wrapper-show {
+      transform: translate3d(0, 0, 0); }
+  .slide-selector .header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dbdde3;
+    line-height: 50px;
+    font-size: 18px; }
+    .slide-selector .header span:nth-child(2) {
+      -webkit-flex: 1;
+      flex: 1;
+      text-align: center; }
+    .slide-selector .header span:not(.slide-selector .header span:nth-child(2)) {
+      width: 70px;
+      text-align: center;
+      font-style: normal; }
+    .slide-selector .header span:nth-child(3) {
+      float: right; }
+    .slide-selector .header .done {
+      color: #24aef2; }
+  .slide-selector .slide-items {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto; }
+    .slide-selector .slide-items li {
+      height: 60px;
+      line-height: 60px;
+      font-size: 20px;
+      text-align: center;
+      border-bottom: 1px solid #dbdde3;
+      line-height: 50px; }

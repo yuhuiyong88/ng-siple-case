@@ -1,0 +1,258 @@
+@import "reset.scss"
+@import "calender.sass"
+@import "reserve.sass"
+@import "common.sass"
+*
+  padding: 0
+  margin: 0
+html,body
+  width: 100%
+  height: 100%
+html
+  font-size: 100px
+body
+  overflow: hidden
+.details_warrper
+  @include box-flex
+  @include flex-direction(column)
+  width: 100%
+  height: 100%
+  overflow: hidden
+  background: #f5f5f5
+  .head
+    height: 44px
+    line-height: 44px
+    background: #ffffff
+    i
+      position: absolute
+      top: 0
+      left: 0
+      width: 44px
+      text-align: center
+      color: #24aef2
+      font-size: 20px
+      line-height: 44px
+    p
+      text-align: center
+      font-size: 16px
+.details_sec
+  @include flex
+  background: #F6F6F6
+  overflow-y: auto
+  .atlas
+    position: relative
+    height: 160px
+    width: 100%
+    .atlas_list
+      width: 100%
+      height: 100%
+      img
+        width: 100%
+        height: 100%
+    .describe
+      font-size: 0px
+      width: 80px
+      height: 30px
+      position: absolute
+      right: 0
+      bottom: 15px
+  .describe_list
+    position: absolute
+    top: 0px
+    right: 0px
+    background: rgba(0,0,0,.5)
+    width: 100%
+    height: 100%
+    z-index: 300
+    &.none
+      display: none
+    .img_warp
+      width: 100%
+      height: 200px
+      position: absolute
+      top: 50%
+      left: 0
+      //transform: translate3d(0,-50%,0)
+      margin-top: -100px
+      li
+        width: 100%
+        height: 100%
+        img
+          width: 100%
+          height: 100%
+  .detail_nav
+    @include box-flex
+    padding: 15px 10px
+    background: #FFFFFF
+    height: 40px
+    span
+      @include flex
+      font-size: 16px
+      text-align: center
+      line-height: 40px
+      border: 1px solid #24aef2
+      box-sizing: border-box
+      &:nth-child(1)
+        color: #24aef2
+        border-radius: 5px 0 0 5px
+      &:nth-child(2)
+        border-radius: 0 5px 5px 0
+      &.active
+        background: #24aef2
+        color: #FFFFFF
+  .hotel_mes
+    background: #FFFFFF
+  .left_right
+    position: relative
+    overflow: hidden
+  .rigths
+    position: absolute
+    width: 100%
+    top: 0px
+    left: 0px
+    font-size: 18px
+    transform: translate3d(100%,0,0)
+    transition: transform 1s
+    overflow: hidden
+    background: #FFFFFF
+    height: 1000px
+    z-index: 10
+    &.rights_active
+      transform: translate3d(0,0,0)
+.detail_hotel
+  h2
+    font-size: 18px
+    padding: 5px 0 15px 15px
+    overflow: hidden
+    -o-text-overflow: ellipsis
+    white-space: nowrap
+  p
+    height: 55px
+    border-top: 1px solid #dbdde3
+    box-sizing: border-box
+    padding-left: 10px
+    line-height: 55px
+    font-size: 18px
+    i
+      color: #CECECE
+      margin-right: 10px
+    span
+      color: #666666
+    &:last-child
+      overflow: hidden
+      -o-text-overflow: ellipsis
+      white-space: nowrap
+
+.reserve
+  margin-top: 15px
+  .title
+    height: 50px
+    line-height: 50px
+    border-top: 1px solid #dbdde3
+    border-bottom: 2px solid #dbdde3
+    box-sizing: border-box
+    width: 100%
+    background: #FFFFFF
+    p
+      display: inline-block
+      font-size: 16px
+      &:not(:nth-child(3))
+        color: #666666
+        margin-left: 10px
+        float: left
+      &:nth-child(1)
+        margin-right: 10px
+      &:nth-child(3)
+        float: right
+        margin-right: 10px
+        color: #24aef2
+  .information
+    background: #FFFFFF
+    .info_list
+      margin: 0px 10px
+      height: 70px
+      font-size: 16px
+      padding-left: 10px
+      &:not(:last-child)
+        border-bottom: 1px solid #dbdde3
+        box-sizing: border-box
+      p
+        display: inline-block
+        &:nth-child(1)
+          float: left
+          width: 50%
+          margin-top: 14px
+          span
+            display: block
+            &:nth-child(1)
+              color: #323232
+            &:nth-child(2)
+              i
+                color: #9E9E9E
+                font-size: 12px
+                font-style: normal
+                &:nth-child(1)
+        &:nth-child(2)
+          float: left
+          line-height: 70px
+          width: 25%
+          color: #FC891C
+          span
+            &:nth-child(2)
+              font-size: 12px
+              padding: 2px 5px
+              background: #FC891C
+              border-radius: 3px
+              color: #FFFFFF
+              margin-left: 5px
+        &:nth-child(3)
+          margin: 16px 5px 0 0
+          display: inline-block
+          float: right
+          width: 61px
+          height: 30px
+          border: 1px solid #24aef2
+          border-radius: 2px
+          line-height: 30px
+          text-align: center
+          color: #24aef2
+    .toogle_more
+      height: 40px
+      color: #A4A4A4
+      border-top: 1px solid #dbdde3
+      box-sizing: border-box
+      line-height: 40px
+      text-align: center
+      font-size: 14px
+.periphery
+  margin-top: 15px
+  border-top: 1px solid #dbdde3
+  box-sizing: border-box
+  .p_title
+    background: #FFFFFF
+    padding-left: 15px
+    line-height: 50px
+    height: 50px
+    color: #3D3D3D
+    font-size: 18px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+@import "reset.scss"
+.slide-selector
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background: rgba(0,0,0,0.5)
+  &.none
+    display: none
+  .slide-wrapper
+    @include box-flex
+    @include flex-direction(column)
+    width: 100%
+    height: 45%
+    background: #FFFFFF
+    position: absolute
+    bottom: 0
+    left: 0
+    transform: translate3d(0,100%,0)
+    transition: transform 1s
+    &.slide-wrapper-show
+      transform: translate3d(0,0,0)
+  .header
+    @include box-flex
+    width: 100%
+    height: 50px
+    border-bottom: 1px solid #dbdde3
+    line-height: 50px
+    font-size: 18px
+    span
+      &:nth-child(2)
+        @include flex
+        text-align: center
+      &:not(&:nth-child(2))
+        width: 70px
+        text-align: center
+        font-style: normal
+      &:nth-child(3)
+        float: right
+    .done
+      color: #24aef2
+  .slide-items
+    @include flex
+    overflow: auto
+    li
+      height: 60px
+      line-height: 60px
+      font-size: 20px
+      text-align: center
+      border-bottom: 1px solid #dbdde3
+      line-height: 50px

@@ -1,0 +1,255 @@
+@import "reset"
+@import "calender.sass"
+@import "common.sass"
+html,body
+  height: 100%
+  width: 100%
+html
+  font-size: 100px
+body
+  overflow: hidden
+.list_warpper
+  @include box-flex
+  @include flex-direction(column)
+  width: 100%
+  height: 100%
+  overflow: hidden
+  background: #f5f5f5
+  overflow: hidden
+  .list_head
+    height: 44px
+    line-height: 44px
+    background: #ffffff
+    i
+      position: absolute
+      top: 0
+      left: 0
+      width: 44px
+      text-align: center
+      color: #24aef2
+      font-size: 20px
+      line-height: 44px
+    p
+      text-align: center
+      font-size: 16px
+  .list_sec
+    @include flex
+    @include box-flex
+    @include flex-direction(column)
+    overflow: hidden
+    .title
+      height: 40px
+      line-height: 40px
+      background: #f5f6f5
+      border-bottom: 1px solid #dbdde3
+      box-sizing: border-box
+      width: 100%
+      p
+        display: inline-block
+        font-size: 16px
+        &:not(:nth-child(3))
+          color: #666666
+          margin-left: 15px
+          float: left
+        &:nth-child(1)
+          margin-right: 20px
+        &:nth-child(3)
+          float: right
+          margin-right: 10px
+          color: #24aef2
+  .mianList
+    @include flex
+    overflow-y: auto
+  .hotel_details
+    width: 100%
+    background: #ffffff
+    .hotel_list
+      @include box-flex
+      padding: 15px 15px
+      border-bottom: 1px solid #dbdde3
+      box-sizing: border-box
+      &.shows
+        display: block
+      &.hides
+        display: none
+      dt
+        width: 80px
+        height: 80px
+        font-size: 0px
+        img
+          width: 100%
+          height: 100%
+      dd
+        @include flex
+        margin-left: 10px
+        overflow: hidden
+        -o-text-overflow: ellipsis
+        white-space: nowrap
+        p
+          @include box-flex
+          width: 100%
+          height: 16px
+          &:nth-child(1)
+            overflow: hidden
+            -o-text-overflow: ellipsis
+            white-space: nowrap
+            color: #333333
+            font-size: 14px
+          &:nth-child(2)
+            margin: 5px 0
+            span
+              &:nth-child(1)
+                @include flex
+                color: #F99027
+                font-size: 14px
+              i
+                margin-left: 5px
+                display: inline-block
+                font-style: normal
+                width: 16px
+                height: 16px
+                line-height: 15px
+                text-align: center
+                font-size: 12px
+                background: #F99027
+                color: #FFFFFF
+              &:nth-child(2)
+                color: #F99027
+                font-size: 16px
+                margin-right: 5px
+              &:nth-child(3)
+                color: #777777
+                font-size: 14px
+                margin-top: 2px
+          &:nth-child(3)
+            @include box-flex
+            overflow: hidden
+            -o-text-overflow: ellipsis
+            white-space: nowrap
+            span
+              color: #777777
+              margin-right: 10px
+              font-size: 14px
+              &:nth-child(2)
+                margin-top: 2px
+              &:nth-child(3)
+                font-size: 12px
+                margin-top: 3px
+          &:nth-child(4)
+            @include box-flex
+            width: 100%
+            margin-top: 5px
+            span
+              color: #777777
+              font-size: 14px
+              &:nth-child(1)
+                @include flex
+                overflow: hidden
+                -o-text-overflow: ellipsis
+                white-space: nowrap
+                margin-right: 10px
+              &:nth-child(2)
+                text-align: right
+
+.list_foot
+  position: absolute
+  bottom: 0px
+  left: 0px
+  width: 100%
+  z-index: 100
+  height: 45px
+  border-top: 1px solid #24aef2
+  box-sizing: border-box
+  ul
+    @include box-flex
+    background: #ffffff
+    font-size: 16px
+    color: #666666
+    li
+      @include flex
+      line-height: 45px
+      text-align: center
+      &:not(:last-child)
+        border-right: 1px solid #dbdde3
+        box-sizing: border-box
+      span
+        &:nth-child(2)
+          font-size: 12px
+
+.listStars
+  width: 100%
+  height: 100%
+  position: absolute
+  background: rgba(0,0,0,.2)
+  left: 0px
+  bottom: 45px
+  font-size: 16px
+  transform: translate3d(0,115%,0)
+  transition: transform 1s
+  &.activeStar
+    transform: translate3d(0,0,0)
+  .ranks,.orders,.price,.region
+    width: 100%
+    position: absolute
+    bottom: 0
+    background: #ffffff
+    transform: translate3d(0,500%,0)
+    transition: transform 1s
+    &.activeChild
+      transform: translate3d(0,0,0)
+    li
+      padding: 0 15px 0 20px
+      height: 50px
+      line-height: 50px
+      border-bottom: 1px solid #dbdde3
+      box-sizing: border-box
+      color: #333333
+      &.checkBox
+        color: #24aef2
+      span
+        &:nth-child(2)
+          float: right
+          font-size: 16px
+        &:nth-child(1)
+          font-size: 18px
+.tagStar
+  border-top: 2px solid #24aef2
+  box-sizing: border-box
+  color: #24aef2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

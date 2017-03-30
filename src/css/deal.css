@@ -1,0 +1,195 @@
+@charset "UTF-8";
+ul {
+  list-style: none; }
+
+/* 瀹氫箟瀛椾綋鍥炬爣 */
+* {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  list-style: none; }
+
+/* 瀹氫箟瀛椾綋鍥炬爣 */
+* {
+  padding: 0;
+  margin: 0; }
+
+.head {
+  height: 55px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box; }
+  .head i {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    color: #24aef2;
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center; }
+  .head p {
+    line-height: 55px;
+    text-align: center;
+    color: #222222;
+    font-size: 20px; }
+
+body {
+  overflow: hidden; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 100px; }
+
+.deal_write {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  overflow: hidden; }
+  .deal_write .order_sec {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow-y: auto; }
+  .deal_write .live_hotel {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    background: #FFFFFF;
+    padding: 0.16rem 0.16rem 0.1rem 0.16rem;
+    border-bottom: 1px solid #d9d9d9;
+    box-sizing: border-box; }
+    .deal_write .live_hotel dt {
+      width: 0.8rem;
+      height: 0.8rem;
+      font-size: 0; }
+      .deal_write .live_hotel dt img {
+        width: 100%;
+        height: 100%; }
+    .deal_write .live_hotel dd {
+      -webkit-flex: 1;
+      flex: 1;
+      margin-left: 0.15rem;
+      position: relative;
+      font-size: 20px; }
+      .deal_write .live_hotel dd h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333333; }
+      .deal_write .live_hotel dd p {
+        width: 100%;
+        font-size: 0.16rem; }
+        .deal_write .live_hotel dd p:nth-child(2) {
+          color: #333333;
+          margin: 0.02rem 0; }
+        .deal_write .live_hotel dd p:nth-child(3) {
+          margin-top: 0.05rem; }
+          .deal_write .live_hotel dd p:nth-child(3) span:nth-child(1) {
+            color: #FA8F25; }
+          .deal_write .live_hotel dd p:nth-child(3) span:nth-child(2) {
+            width: 0.38rem;
+            font-size: 0.14rem;
+            background: #FA8F25;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 0.02rem;
+            line-height: 0.2rem;
+            padding: 0 0.02rem; }
+  .deal_write .card_info h2, .deal_write .cardholder h2 {
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 18px;
+    color: #adadad;
+    font-weight: 500; }
+  .deal_write .card_info ul, .deal_write .cardholder ul {
+    background: #FFFFFF;
+    border-bottom: 1px solid #edeef1;
+    border-top: 1px solid #edeef1;
+    box-sizing: border-box; }
+    .deal_write .card_info ul li, .deal_write .cardholder ul li {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      height: 45px;
+      line-height: 45px;
+      color: #333333;
+      margin-left: 10px;
+      font-size: 18px;
+      padding-left: 0.05rem; }
+      .deal_write .card_info ul li:nth-child(1) label input, .deal_write .card_info ul li:nth-child(2) label input, .deal_write .cardholder ul li:nth-child(1) label input, .deal_write .cardholder ul li:nth-child(2) label input {
+        color: #222222; }
+      .deal_write .card_info ul li:not(:nth-child(4)), .deal_write .cardholder ul li:not(:nth-child(4)) {
+        border-bottom: 1px solid #edeef1;
+        box-sizing: border-box; }
+      .deal_write .card_info ul li:nth-child(3) label input, .deal_write .card_info ul li:nth-child(4) label input, .deal_write .cardholder ul li:nth-child(3) label input, .deal_write .cardholder ul li:nth-child(4) label input {
+        color: #adadad; }
+      .deal_write .card_info ul li label, .deal_write .cardholder ul li label {
+        -webkit-flex: 1;
+        flex: 1; }
+        .deal_write .card_info ul li label input, .deal_write .cardholder ul li label input {
+          margin-left: 50px;
+          border: none;
+          outline: none;
+          font-size: 16px;
+          height: 0.4rem; }
+      .deal_write .card_info ul li span, .deal_write .cardholder ul li span {
+        float: right;
+        width: 15px;
+        height: 15px;
+        background: #adadad;
+        border-radius: 100%;
+        color: #FFFFFF;
+        line-height: 13px;
+        text-align: center;
+        margin: 15px 15px 0 0; }
+  .deal_write .prompt {
+    margin: 20px 15px 25px 15px; }
+    .deal_write .prompt h2 {
+      font-size: 18px;
+      color: #f24c3d; }
+    .deal_write .prompt p {
+      color: #666;
+      font-size: 16px; }
+  .deal_write .foot {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex; }
+    .deal_write .foot p {
+      height: 55px;
+      font-size: 20px; }
+      .deal_write .foot p:nth-child(1) {
+        -webkit-flex: 1;
+        flex: 1;
+        background: #16498f;
+        color: #FFFFFF;
+        line-height: 55px;
+        text-align: center; }
+      .deal_write .foot p:nth-child(2) {
+        color: #FFFFFF;
+        background: #24aef2;
+        width: 150px;
+        line-height: 55px;
+        text-align: center; }
+
+/*# sourceMappingURL=deal.css.map */
